@@ -1,0 +1,12 @@
+sours= 공룡패턴 홀로그램 케이스
+siba= 시바 내밥은 케이스
+yaho=야호 케이스
+blossom=벚꽃신호등 케이스
+sogonsogon=소곤소곤 케이스
+matilda=화분 레옹마틸다 케이스
+flyingcat = 날아라 냥 케이스
+littleprince=어린왕자 달 케이스
+neoncola=네온콜라 케이스
+misosworld=미소의세상케이스
+elizabeth=엘리자베스 케이스
+margrite= 마그리트 모자 케이스
