@@ -1,0 +1,90 @@
+.detail {
+	font-family: Arial bold;
+	position: relative;
+	overflow: hidden;
+	margin: 0px;
+	height: 100%;
+	width: 100%
+	background: #000000;
+	color: black;
+	text-align: center;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+
+}
+.detail *{
+	-webkit-box-sizing:border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.45s ease-in-out;
+	transition: all 0.45s ease-in-out;
+}
+.detail img{
+	max-width: 100%
+	opacity: 1;
+}
+.detail figcaption{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	right: 20px;
+	bottom: 20px;
+	border: 1px solid black;
+	border-width:0 1px;
+	z-index: 1;
+	opacity: 0;
+} 
+.detail .heading{
+	overflow: hidden;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.detail .caption{
+	overflow:hidden;
+	-webkit-transform: translateY(50%);
+	transform: translateY(50%);
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+.detail figcaption:before, .detail figcaption:after {
+	position: absolute;
+	display: block;
+	width: 1000%
+	height:1px;
+	content: '';
+	background:white;
+	bottom: 50%;
+}
+.detail figcaption:before{
+	left: -1000%
+}
+.detail figcaption:after{
+	right:-1000%;
+}
+.detail p {
+	 display: table;
+   	margin: 0 auto;
+ 	 padding: 0 10px;
+ 	 position: relative;
+ 	 text-align: center;
+ 	 width: auto;
+  	text-transform: uppercase;
+  	font-weight: 400;
+  	font-size: 0.7em;
+  	opacity: 0;
+}
+.detail:hover img,.detail.hover img{
+	opacity: 0.35;
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
+.detail:hover p,.detail.hover p{
+	opacity: 1;
+	-webkit-transform: translate(0px, 0px);
+	transform: translate(0px, 0px);
+}
+.detail:hover figcaption,.detail.hover figcaption{
+	opacity: 1;
+	-webkit-transform: translate(0px, 0px);
+	transform: translate(0px, 0px);
+}
+
