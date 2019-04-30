@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>홈 화면</title>
+	<link rel="stylesheet" href="css/detail.css">
+	<link rel="stylesheet" href="css/menubar.css">
+	<style>
+		.body{
+			margin-right: 200px;
+			margin-left: 200px;
+		}
+		.Brand{
+			border-bottom: 1px dotted;
+			border-color: #cccccc;
+			margin-bottom:20px;
+			font-size: 20px;
+			padding-right: 100px;
+			text-align: right;
+			margin-right: 50px;
+		}
+		.login{
+			border-top: 1px solid;
+			border-bottom: 1px solid;
+			border-color: #cccccc;
+			text-align: right;
+			font-family: "돋움";
+			font-size: 12px;
+			z-index: 1;
+		}
+		.Brandimage{
+			text-align: center;
+			background-color: yellow;
+			width: 210px;
+			height: 130px;
+			border:1px solid;
+			border-color: red;
+			float: left;
+			margin-bottom: 40px;
+		}
+		.contents{
+			border: 1px solid black;
+			margin: 20px auto;
+			margin-top: 50px;
+			margin-left: 250px;
+			width: 80%;
+			height: 400px;
+		}
+		.sidebar{
+			position: fixed;
+			top: 170px;
+			padding: 10px;
+			border: 1px solid black;
+			border-radius: 20px;
+			margin-bottom: 20px;
+			width: 180px;
+			float: left;
+			font-size: 12px;
+			padding left:20px;
+			padding right: 15px;
+		}
+		section{
+			margin-top: 30px;
+			margin-bottom: 20px;
+			width:70%;
+			height: 350px;
+			float: left;
+			margin-left: 300px;
+		}
+		.secweek{
+			margin-left: 400px;
+		}
+		article{
+			width:23%;
+			height: 100%;
+			margin-left: 10px;
+			border:solid 1px black;
+			float: left;
+		}
+		.clear{
+			clear: both;
+		}
+		footer{
+			padding:10px;
+			padding-right: 50px;
+			background-color: black;
+			color: white;
+			text-align: right;
+			font-size: 10px;
+
+		}
+		ul{
+			list-style-type: none;
+			padding-right: 50px;
+		}
+		ul li{
+			display: inline;
+			text-align: right;
+		}
+		ul li a{
+			color: black;
+			text-decoration: none;
+		}
+		.weekbest{
+			text-align: center;
+			margin-left: 300px;
+			margin-top: 100px;
+			font-size: 30px;
+			margin-bottom: 50px;
+			line-height: 20px;
+		}
+		.best{
+			color: violet;
+		}
+		.best1{
+			font-size: 12px;
+			font-family: '돋움';
+		}
+		.menu a{cursor:pointer;}
+		.menu .hide{display:none;}
+	</style>
+</head>
+<body>
+	<div class="body">
+	<div class="Brandimage">
+	<p>안녕</p>
+	</div>
+<header class="Brand">
+	<div class="menubar">
+	<ul>
+		<li><a href="#">Thema&nbsp;&nbsp;&nbsp;&nbsp;</a>
+			<ul>
+				<li>Character</li>
+				<li>Simple</li>
+				<li>Brand</li>
+				<li>Wise Saying</li>
+				<li>Custom</li>
+			</ul>
+		</li>
+		<li><a href="#">News&nbsp;&nbsp;&nbsp;&nbsp;</a>
+		</li>
+		<li><a href="#">Events&nbsp;&nbsp;&nbsp;&nbsp;</a>
+		<ul>
+				<li>진행 중인 이벤트</li>
+				<li>지난 이벤트</li>
+			</ul>
+		</li>
+		<li><a href="#">New&nbsp;&nbsp;&nbsp;&nbsp;</a>
+		</li>
+		<li><a href="#">Best&nbsp;&nbsp;&nbsp;&nbsp;</a>
+		<ul>
+				<li>Million Seller</li>
+				<li>월별 베스트</li>
+				<li>나이대별 베스트</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+</header>
+<div class="contents">
+	<img id="img1" src="image/zzangu.jpg" width="100%" height="400">
+	<input type="image" src="image/Right.png" height="30" border="0" onclick="changeimage()"
+	style="position: absolute; top:450px; right:300px;">
+</div>
+<script>
+	function changeimage(){
+		var image = document.getElementById("img1");
+		if (image.src.match("zzangu")) {
+			image.src = "image/bear.jpg";
+		} else if(image.src.match("bear")) {
+			image.src = "image/avocado.jpg";
+		} else{
+			image.src = "image/zzangu.jpg";
+		}
+	}
+</script>
+</div>
+<div class="clear"></div>
+<header class="login">
+	<nav>
+	<ul>
+		<li><a href="로그인.html">로그인 |</a></li>
+		<li><a href="회원가입.html"> 회원가입 |</a></li>
+		<li><a onclick="openPop()"> 장바구니 |</a></li>
+		<li><a href="#"> 주문하기 |</a></li>
+		<li><a href="#"> Q & A |</a></li>
+		<li><a href="#"> Review</a></li>
+	</ul>
+	</nav>
+</header>
+<script src="popup.js"></script>
+<div class="clear"></div>
+<div class="body">
+<div class="sidebar">
+	<header><input type="text" name="null"size="18">
+		<img src="image/rense.jpg" height="10" width="10"></header>
+		<br>
+	
+	<p>Galaxy S | A | J | note </p>
+	<p>Iphone XS | X | XR | 6 | 7 | 8</p>
+	<p>LG G | V | Q | X</p>
+	<P>VEGA A | Racer | Iron | note</P>
+	<p>기타 스마트폰</p>
+	
+</div>
+<section>
+	<article><img src="image/event1.jpg" width="100%" height="100%"></article>
+	<article><img src="image/event2.png" width="100%" height="100%"></article>
+	<article><img src="image/event3.png" width="100%" height="100%"></article>
+	<article><img src="image/event4.png" width="100%" height="100%"></article>
+</section>
+</div>
+<div class="clear"></div>
+<div class="weekbest" id="container">
+	WEEKLY<span class="best"> BEST</span>
+	<span class="best1"><br>#이번주는 #모두 내 아래</span>
+</div>
+<div class="clear"></div>
+<section class="secweek">
+	<article><figure class="detail"><img src="image/sours.png" width="100%" height="100%"><figcaption><div class="heading"><p> 공룡패턴 홀로그램 케이스 </p></div></figcaption></figure></article>
+	<article><figure class="detail"><img src="image/blossom.gif" width="100%" height="100%"><figcaption><div class="heading"><p> 벚꽃 신호등 케이스 </p></div></figcaption></figure></article>
+	<article><figure class="detail"><img src="image/yaho.jpg" width="100%" height="100%"><figcaption><div class="heading"><p> 야호 케이스 </p></div></figcaption></figure></article>
+	<article><figure class="detail"><img src="image/sogonsogon.jpg" width="100%" height="100%"><figcaption><div class="heading"><p> 소곤소곤 케이스 </p></div></figcaption></figure></article>
+</section>
+<div class="clear"></div>
+<section class="secweek">
+	<article><figure class="detail"><img src="image/matilda.jpg" width="100%" height="100%"><figcaption><div class="heading"><p> 화분 레옹마틸다 케이스 </p></div></figcaption></figure></article>
+	<article><figure class="detail"><img src="image/flyingcat.gif" width="100%" height="100%"><figcaption><div class="heading"><p> 날아라 냥 케이스 </p></div></figcaption></figure></article>
+	<article><figure class="detail"><img src="image/littleprince.jpg" width="100%" height="100%"><figcaption><div class="heading"><p> 어린왕자 달 케이스 </p></div></figcaption></figure></article>
+	<article><figure class="detail"><img src="image/neoncola.jpg" width="100%" height="100%"><figcaption><div class="heading"><p> 네온콜라 케이스 </p></div></figcaption></figure></article>
+</section>
+<div class="clear"></div>
+<section class="secweek">
+	<article><figure class="detail"><img src="image/margrite.jpg" width="100%" height="100%"><figcaption><div class="heading"><p> 마그리트 모자 케이스 </p></div></figcaption></figure></article>
+	<article><figure class="detail"><img src="image/misosworld.gif" width="100%" height="100%"><figcaption><div class="heading"><p> 미소의 세상 케이스 </p></div></figcaption></figure></article>
+	<article><figure class="detail"><img src="image/elizabeth.jpg" width="100%" height="100%"><figcaption><div class="heading"><p> 엘리자베스 케이스 </p></div></figcaption></figure></article>
+	<article><figure class="detail"><img src="image/siba.jpg" width="100%" height="100%"><figcaption><div class="heading"><p> 시바 내밥은 케이스 </p></div></figcaption></figure></article>
+</section>
+<script>
+	$(".hover").mouseleave(function(){
+		$(this).removeClass("hover");
+	});
+</script>
+
+<div class="clear"></div>
+<footer>
+	<p>이 홈페이지는 모두 구라입니다.</p>
+</footer>
+</body>
+
+</html>

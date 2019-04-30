@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>로그인화면</title>
+	<link rel="stylesheet" href="css/menubar.css">
+	<style>
+		.body{
+			margin-right: 200px;
+			margin-left: 200px;
+		}
+		.Brand{
+			border-bottom: 1px dotted;
+			border-color: #cccccc;
+			margin-bottom:20px;
+			font-size: 20px;
+			padding-right: 100px;
+			text-align: right;
+			margin-right: 50px;
+		}
+		.login{
+			border-top: 1px solid;
+			border-bottom: 1px solid;
+			border-color: #cccccc;
+			text-align: right;
+			font-family: "돋움";
+			font-size: 12px;
+			z-index: 1;
+		}
+		.Brandimage{
+			text-align: center;
+			background-color: yellow;
+			width: 210px;
+			height: 130px;
+			border:1px solid;
+			border-color: red;
+			float: left;
+			margin-bottom: 40px;
+		}
+		.contents{
+			border: 1px solid black;
+			margin: 20px auto;
+			margin-left: 250px;
+			width: 80%;
+			height: 400px;
+			margin-top: 50px;
+		}
+		.sidebar{
+			position: fixed;
+			top: 170px;
+			padding: 10px;
+			border: 1px solid black;
+			border-radius: 20px;
+			margin-bottom: 20px;
+			width: 180px;
+			float: left;
+			font-size: 12px;
+			padding left:20px;
+			padding right: 15px;
+		}
+		section{
+			margin-top: 30px;
+			margin-bottom: 20px;
+			width:900px;
+			height: 350px;
+			float: left;
+			margin-left: 600px;
+		}
+		article{
+			padding:10px;
+		}
+		#head{
+			clear: both;
+			text-align: center;
+			text-decoration:underline;
+			font-family: "궁서체";
+		}
+		#login{
+			float: left;
+			width: 47.5%;
+			border-right: 2px dotted black;
+		}
+		#join{
+			float: right;
+			width: 47.5%;
+		}
+		.clear{
+			clear: both;
+		}
+		footer{
+			padding:10px;
+			padding-right: 50px;
+			background-color: black;
+			color: white;
+			text-align: right;
+			font-size: 10px;
+			margin-top: 200px;
+
+		}
+		ul{
+			list-style-type: none;
+			padding-right: 50px;
+		}
+		ul li{
+			display: inline;
+			text-align: left;
+		}
+		ul li a{
+			color: black;
+			text-decoration: none;
+		}
+		input[type="text"]{
+			border: none;
+			border-bottom: 2px dotted #ccc;
+			width: 300px;
+			margin-top: 20px;
+		}
+		input[type="checkbox"]{
+			margin-top: 10px;
+		}
+		a{
+			text-decoration: none;
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<body>
+	<div class="body">
+	<div class="Brandimage">
+	<p>안녕</p>
+</div>
+<header class="Brand">
+	<div class="menubar">
+	<ul>
+		<li><a href="#">Thema&nbsp;&nbsp;&nbsp;&nbsp;</a>
+			<ul>
+				<li>Million Sellor</li>
+				<li>0102</li>
+			</ul>
+		</li>
+		<li><a href="#">News&nbsp;&nbsp;&nbsp;&nbsp;</a>
+		</li>
+		<li><a href="#">Events&nbsp;&nbsp;&nbsp;&nbsp;</a>
+		<ul>
+				<li>진행 중인 이벤트</li>
+				<li>지난 이벤트</li>
+			</ul>
+		</li>
+		<li><a href="#">New&nbsp;&nbsp;&nbsp;&nbsp;</a>
+		</li>
+		<li><a href="#">Best&nbsp;&nbsp;&nbsp;&nbsp;</a>
+		<ul>
+				<li>Million Seller</li>
+				<li>월별 베스트</li>
+				<li>나이대별 베스트</li>
+			</ul>
+		</li>
+	</ul>
+	</div>
+</header>
+<div class="contents">
+	<img id="img1" src="image/zzangu.jpg" width="100%" height="400">
+	<input type="image" src="image/Right.png" height="30" border="0" onclick="changeimage()"
+	style="position: absolute; top:450px; right:300px;">
+</div>
+<script>
+	function changeimage(){
+		var image = document.getElementById("img1");
+		if (image.src.match("zzangu")) {
+			image.src = "image/bear.jpg";
+		} else if(image.src.match("bear")) {
+			image.src = "image/avocado.jpg";
+		} else{
+			image.src = "image/zzangu.jpg";
+		}
+	}
+</script>
+<div class="clear"></div>
+</div>
+<header class="login">
+	<nav>
+	<ul>
+		<li><a href="로그인.html">로그인 |</a></li>
+		<li><a href="회원가입.html"> 회원가입 |</a></li>
+		<li><a onclick="openPop()"> 장바구니 |</a></li>
+		<li><a href="#"> 주문하기 |</a></li>
+		<li><a href="#"> Q & A |</a></li>
+		<li><a href="#"> Review</a></li>
+	</ul>
+	</nav>
+</header>
+<div class="clear"></div>
+<div class="body">
+<div class="sidebar">
+	<header><input type="search" name="null"size="18">
+		<img src="image/rense.jpg" height="10" width="10"></header>
+		<br>
+	
+	<p>Galaxy S | A | J | note </p>
+	<p>Iphone XS | X | XR | 6 | 7 | 8</p>
+	<p>LG G | V | Q | X</p>
+	<P>VEGA A | Racer | Iron | note</P>
+	<p>기타 스마트폰</p>
+	
+</div>
+</div>
+<div class="clear"></div>
+<section>
+	<article id="head"><p>M e m b e r &nbsp;&nbsp;L o g i n</p></article>
+	<article id="login">
+		<form action="#">
+			<ul>
+				<li>
+					<input type="text" id="user-id" placeholder=" I D" required>
+				</li>
+				<li>
+					<input type="text" id="user-pw" placeholder=" PASSWORD" required><br>
+				</li>
+				<li style="font-size: 13px; color:#999;">
+					<input type="checkbox" value="아이디 저장">아이디저장<br>
+				</li>
+			</ul>
+		</form>
+		<div id="login-image">
+			<a href="#"><img src="image/login.png" style="margin-left: 50px; margin-top: 20px;"></a>
+			<a href="#"><img src="image/nlogin.png" style="margin-left: 50px; margin-top: 1px;"></a>
+			<a href="#"><img src="image/flogin.png" style="margin-left: 50px; margin-top: 1px;"></a>
+			<a href="#"><img src="image/klogin.png" style="margin-left: 50px; margin-top: 1px;"></a>
+		</div>
+	</article>
+	<article id="join">
+		<div id="join1">
+		<a href="회원가입.html"><img src="image/join.png" style="margin-left: 60px; margin-top: 20px; height: 90px;"></a>
+	</div>
+	<div id="join2" style="padding-left: 60px; padding-top: 50px;">
+		<a href="#"><p style="font-size: 12px;
+		font-family: '굴림';"> 아이디를 잊으셨습니까?</p></a>
+		<a href="#"><p style="font-size: 12px; 
+		font-family: '굴림';"> 비밀번호를 잊으셨습니까?</p></a>
+	</div>
+	</article>
+</section>
+<div class="clear"></div>
+<footer>
+	<p>이 홈페이지는 모두 구라입니다.</p>
+</footer>
+</body>
+</html>
