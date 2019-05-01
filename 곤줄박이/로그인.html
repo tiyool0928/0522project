@@ -28,30 +28,26 @@
 			z-index: 1;
 		}
 		.Brandimage{
-			text-align: center;
-			background-color: yellow;
-			width: 210px;
-			height: 130px;
-			border:1px solid;
-			border-color: red;
+			width: 100%;
+			height:180px;
 			float: left;
-			margin-bottom: 40px;
+			margin-left: 650px;
 		}
 		.contents{
 			border: 1px solid black;
 			margin: 20px auto;
-			margin-left: 250px;
+			margin-left: 200px;
 			width: 80%;
 			height: 400px;
 			margin-top: 50px;
 		}
 		.sidebar{
 			position: fixed;
-			top: 170px;
+			top: 250px;
+			left: 100px;
 			padding: 10px;
-			border: 1px solid #FFE4F3;
+			border: 1px solid black;
 			border-radius: 20px;
-			background-color: #FFE4F3;
 			margin-bottom: 20px;
 			width: 180px;
 			float: left;
@@ -100,6 +96,7 @@
 		}
 		ul{
 			list-style-type: none;
+			padding-right: 50px;
 		}
 		ul li{
 			display: inline;
@@ -126,41 +123,35 @@
 </head>
 <body>
 	<body>
+		<div class="Brandimage">
+	<a href="쇼핑몰 과제.html"><img src="image/logo3.png" width="30%" height="100%"></a>
+	</div>
+	<div class="clear"></div>
 	<div class="body">
-	<div class="Brandimage">
-	<p>안녕</p>
-</div>
 <header class="Brand">
 	<div class="menubar">
 	<ul>
 		<li><a href="#">Thema&nbsp;&nbsp;&nbsp;&nbsp;</a>
 			<ul>
-				<li>0101</li>
+				<li>Million Sellor</li>
 				<li>0102</li>
 			</ul>
 		</li>
 		<li><a href="#">News&nbsp;&nbsp;&nbsp;&nbsp;</a>
-		<ul>
-				<li>0101</li>
-				<li>0102</li>
-			</ul>
 		</li>
 		<li><a href="#">Events&nbsp;&nbsp;&nbsp;&nbsp;</a>
 		<ul>
-				<li>0101</li>
-				<li>0102</li>
+				<li>진행 중인 이벤트</li>
+				<li>지난 이벤트</li>
 			</ul>
 		</li>
 		<li><a href="#">New&nbsp;&nbsp;&nbsp;&nbsp;</a>
-		<ul>
-				<li>0101</li>
-				<li>0102</li>
-			</ul>
 		</li>
 		<li><a href="#">Best&nbsp;&nbsp;&nbsp;&nbsp;</a>
 		<ul>
-				<li>0101</li>
-				<li>0102</li>
+				<li>Million Seller</li>
+				<li>월별 베스트</li>
+				<li>나이대별 베스트</li>
 			</ul>
 		</li>
 	</ul>
@@ -169,7 +160,7 @@
 <div class="contents">
 	<img id="img1" src="image/zzangu.jpg" width="100%" height="400">
 	<input type="image" src="image/Right.png" height="30" border="0" onclick="changeimage()"
-	style="position: absolute; top:450px; right:300px;">
+	style="position: absolute; top:600px; right:400px;">
 </div>
 <script>
 	function changeimage(){
@@ -184,17 +175,22 @@
 	}
 </script>
 <div class="clear"></div>
+</div>
 <header class="login">
 	<nav>
 	<ul>
 		<li><a href="로그인.html">로그인 |</a></li>
 		<li><a href="회원가입.html"> 회원가입 |</a></li>
 		<li><a onclick="openPop()"> 장바구니 |</a></li>
-		<li><a href="#"> 주문하기</a></li>
+		<li><a href="#"> 주문하기 |</a></li>
+		<li><a href="#"> Q & A |</a></li>
+		<li><a href="#"> Review</a></li>
 	</ul>
 	</nav>
+	<script src="popup.js"></script>
 </header>
 <div class="clear"></div>
+<div class="body">
 <div class="sidebar">
 	<header><input type="search" name="null"size="18">
 		<img src="image/rense.jpg" height="10" width="10"></header>
@@ -234,7 +230,7 @@
 	</article>
 	<article id="join">
 		<div id="join1">
-		<a href="#"><img src="image/join.png" style="margin-left: 60px; margin-top: 20px; height: 90px;"></a>
+		<a href="회원가입.html"><img src="image/join.png" style="margin-left: 60px; margin-top: 20px; height: 90px;"></a>
 	</div>
 	<div id="join2" style="padding-left: 60px; padding-top: 50px;">
 		<a href="#"><p style="font-size: 12px;
