@@ -1,0 +1,51 @@
+#container{
+	width:600px;
+	margin:0 auto;
+}
+ul {
+	list-style:none;
+}
+.benefit {
+	margin-top: 50px;
+}
+.field {
+	float:left;
+	width:100px;
+	font-weight:bold;
+	font-size:0.9em;
+	line-height: 55px;
+	text-align:right;
+	margin-right:15px;
+}
+input[type="text"], input[type="password"],
+input[type="email"], input[type="tel"]{
+	float:left;
+	width:350px;
+	height:35px;
+	border:1px solid #aaa;
+	border-radius:5px;
+	padding:5px;
+	margin:10px 0;
+	float: left;
+}
+.r {
+	line-height:55px;
+}
+
+#buttons > li {
+	margin-top: 0px;
+	display:inline-block;
+}
+#join {
+	margin-top: 100px;
+	margin-bottom: 50px;
+	width:500px;
+	height:50px;
+	margin-right:10px;
+	background:#c4e7d6;
+	border:none;
+	font-size:0.9em;
+}
+#undLine {
+	border-bottom: 3px solid #6a6196;
+}
