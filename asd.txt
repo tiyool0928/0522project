@@ -1,0 +1,13 @@
+create database sellbuy;
+
+create table seller (
+ID varchar(15) PRIMARY KEY NOT NULL,
+Password varchar(30) NOT NULL,
+ProductNum INT NOT NULL,
+ProductPrice INT NUO NULL,
+Money INT);
+
+create table buyer (
+D varchar(15) PRIMARY KEY NOT NULL,
+Password varchar(30) NOT NULL,
+Money INT);
